@@ -1,0 +1,239 @@
+/**
+.columns, .column{
+  outline: 1px solid red;
+}
+**/
+.hero {
+  background-image: url("../images/daniela-avila-53379-unsplash.jpg");
+}
+
+.hero .title {
+  margin-bottom: 3rem;
+}
+
+.hero .subtitle {
+  max-width: 600px;
+  line-height: 2rem;
+}
+
+.hero .button {
+  background-color: #ffc053;
+}
+
+.hero.is-info a:hover {
+  background-color: rgba(253, 101, 134, 0.37) !important;
+}
+
+a.navbar-item:hover,
+a.navbar-item.is-active,
+a.navbar-link:hover,
+a.navbar-link.is-active {
+  background-color: rgba(253, 101, 134, 0.37) !important;
+}
+
+.section {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+
+h2.title {
+  margin-bottom: 1rem;
+}
+
+p.tag {
+  background-color: #00d1b2;
+}
+
+p.tag a {
+  color: #fff;
+}
+
+p.tag a:hover {
+  background-color: #FD6585;
+}
+
+.spacer-is-small {
+  margin-top: 2rem;
+}
+
+.spacer-is-large {
+  margin-top: 5rem;
+}
+
+.bottom-line {
+  border-bottom: 6px solid orange;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote {
+  color: #4a4a4a;
+  font-size: 1.30rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.author {
+  color: orange;
+  font-size: 16px;
+}
+
+.vertical-line {
+  border-left: 6px solid #181845;
+  height: 75px;
+  position: absolute;
+  top: 0;
+}
+
+/*DIVIDER*/
+.hr-container {
+  padding: 5%;
+}
+
+hr[data-divider] {
+  height: 2px;
+  margin: 10px 0;
+  position: relative;
+  overflow: visible;
+  background: #ffc053;
+  text-align: center;
+  border: none;
+}
+
+hr[data-divider]:after {
+  content: attr(data-divider);
+  top: -10px;
+  position: relative;
+  background: white;
+  padding: 0 5px;
+  color: #9a9a9a;
+}
+
+.owl-carousel .item {
+  padding: 20px 20px 20px 20px;
+}
+
+.owl-dot,
+.owl-dots {
+  display: none;
+}
+
+.parallax-section {
+  height: 80vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  position: relative;
+  background-image: url("http://picsum.photos/1920/1200/?random");
+}
+
+.cta-card {
+  margin-top: 7vh;
+}
+
+.cta-card p {
+  font-size: 1rem;
+  color: white;
+}
+
+.cta-card h2 {
+  color: white;
+}
+
+/*Poloroid Cards*/
+.poloroid-card-container {
+  position: relative;
+  width: 55vmin;
+  height: 65vmin;
+}
+
+.poloroid-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  background-color: #fafafa;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.35);
+  transition: transform .35s ease-out;
+  transform: translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle));
+  will-change: transform;
+}
+
+.poloroid-card:hover {
+  transform: scale(1) rotate(0deg);
+  z-index: 1;
+}
+
+.poloroid-card:hover:before {
+  opacity: 1;
+}
+
+.poloroid-card:before {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 80%;
+  margin: 5%;
+  background: var(--image) center center no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 5px rgba(34, 34, 34, 0.35);
+  border-radius: 2px;
+  filter: sepia(0.2) brightness(0.9) contrast(1.2);
+  transition: opacity .35s ease-out;
+  opacity: .5;
+  will-change: opacity;
+}
+
+.poloroid-card:after {
+  display: block;
+  content: var(--caption);
+  font-weight: 500;
+  color: #555;
+  font-size: 3vmin;
+  opacity: .75;
+  text-align: center;
+}
+
+.is-call-to-action {
+  background-color: #212121;
+  border-radius: 7px;
+  opacity: .85;
+  padding: 30px 30px 30px 30px;
+}
+
+.media-left {
+  background-image: url("http://picsum.photos/375/500/?random");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  border: 15px solid white;
+  border-radius: 5px;
+  box-shadow: rgba(14, 25, 80, 0.3) 0px 5px 20px 0px;
+}
+
+.tile .column .box {
+  box-shadow: rgba(14, 25, 80, 0.3) 0px 5px 20px 0px;
+}
+
+.tile .centered {
+  display: flex;
+  justify-content: center;
+}
+
+.gray {
+  background-color: #f7f7f7;
+}
+
+/*QUERIES*/
+@media only screen and (max-width: 500px) {
+  .cta-card {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+  }
+}
