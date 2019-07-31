@@ -93,7 +93,7 @@ p.tag a:hover {
 }
 
 hr[data-divider] {
-	height: 2px;
+	height: 3px;
 	margin: 10px 0;
 	position: relative;
 	overflow: visible;
@@ -111,7 +111,12 @@ hr[data-divider]:after {
 	color: #9a9a9a;
 }
 
-
+.member-exclusive{
+  background-color: $teal;
+  h2.title {
+    color: $white;
+  }
+}
 
 
 .owl-carousel {

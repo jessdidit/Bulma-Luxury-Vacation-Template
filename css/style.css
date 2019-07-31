@@ -17,7 +17,7 @@
 }
 
 .hero .button {
-  background-color: #ffc053;
+  background-color: #FCC559;
 }
 
 .hero.is-info a:hover {
@@ -92,11 +92,11 @@ p.tag a:hover {
 }
 
 hr[data-divider] {
-  height: 2px;
+  height: 3px;
   margin: 10px 0;
   position: relative;
   overflow: visible;
-  background: #ffc053;
+  background: #FCC559;
   text-align: center;
   border: none;
 }
@@ -108,6 +108,14 @@ hr[data-divider]:after {
   background: white;
   padding: 0 5px;
   color: #9a9a9a;
+}
+
+.member-exclusive {
+  background-color: #1F5F67;
+}
+
+.member-exclusive h2.title {
+  color: #ffffff;
 }
 
 .owl-carousel .item {
