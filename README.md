@@ -1,1 +1,1 @@
-aBulma-Luxury-Vacation-Template
+Bulma-Luxury-Vacation-Template
